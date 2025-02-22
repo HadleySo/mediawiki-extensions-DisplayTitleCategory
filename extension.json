@@ -1,0 +1,38 @@
+{
+	"name": "DisplayTitleCategory",
+	"version": "1.0.0",
+	"author": "[https://hadleyso.com Hadley So]",
+	"url": "https://github.com/HadleySo/mediawiki-extensions-DisplayTitleCategory",
+	"description": "Modify Display Title based on page categories",
+	"type": "hook",
+	"license-name": "AGPL-3.0-only",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+    "AutoloadNamespaces": {
+		"MediaWiki\\Extension\\DisplayTitleCategory\\": "includes/"
+	},
+    "AutoloadClasses": {
+        "main": "includes/Hooks.php"
+    },
+    "HookHandlers": {
+        "main": {
+            "class": "MediaWiki\\Extension\\DisplayTitleCategory\\Hooks"
+        }
+    },
+	"Hooks": {
+        "MultiContentSave": "main"
+	},
+	"config": {
+		"DisplayTitleCategoryPrepend": {
+			"value": true
+		},
+		"DisplayTitleCategoryAppend": {
+			"value": false
+		},
+        "DisplayTitleCategoryLabels" : {
+            "value": []
+        }
+	},
+	"manifest_version": 2
+}
