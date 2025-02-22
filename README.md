@@ -1,3 +1,5 @@
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
 # Display Title Category 
 
 The **Display Title Category** extension appends and/or prepends text to a page's display title based on the page's categories. Pages are saved with the modified display title. Can be paired with [Display Title](https://www.mediawiki.org/wiki/Extension:Display_Title) to have the display title to be used as the default link text in links to the page
